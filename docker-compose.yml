@@ -22,6 +22,7 @@ services:
       - "mongo_data:/data/db"
     networks:
       - graynet
+    restart: unless-stopped
 
   # The logs themselves are stored in Opensearch
   opensearch:
@@ -47,6 +48,7 @@ services:
       - 9200:9200/tcp
     networks:
       - graynet
+    restart: unless-stopped
 
   graylog:
     image: graylog/graylog:5.0
