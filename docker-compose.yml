@@ -62,6 +62,8 @@ services:
       GRAYLOG_HTTP_EXTERNAL_URI: "http://localhost:9000/"
       GRAYLOG_ELASTICSEARCH_HOSTS: "http://opensearch:9200"
       GRAYLOG_MONGODB_URI: "mongodb://mongodb:27017/graylog"
+      GRAYLOG_TIMEZONE: "America/Detroit"
+      TZ: "America/Detroit"
     entrypoint: /usr/bin/tini -- wait-for-it opensearch:9200 -- /docker-entrypoint.sh
     volumes:
       - "${PWD}/config/graylog/graylog.conf:/usr/share/graylog/config/graylog.conf"
