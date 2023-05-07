@@ -8,7 +8,7 @@ networks:
 volumes:
   mongo_data:
     driver: local
-  os_data:
+  log_data:
     driver: local
   graylog_data:
     driver: local
@@ -36,7 +36,7 @@ services:
       - "plugins.security.ssl.http.enabled=false"
       - "plugins.security.disabled=true"
     volumes:
-      - "os_data:/usr/share/opensearch/data"
+      - "log_data:/usr/share/opensearch/data"
     ulimits:
       memlock:
         soft: -1
