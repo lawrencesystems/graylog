@@ -51,7 +51,7 @@ services:
     restart: unless-stopped
 
   graylog:
-    image: graylog/graylog:5.0
+    image: graylog/graylog:5.1
     container_name: graylog
     environment:
       # CHANGE ME (must be at least 16 characters)!
