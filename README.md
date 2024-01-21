@@ -9,3 +9,5 @@ docker compose up
 ```
 
 Access graylog [here.](http://localhost:9000)
+
+nxlog.conf is the Window NXLOG configuration for sending GELF format logs to Graylog. Replace the default C:\Program Files\nxlog\conf\nxlog.conf with the one https://raw.githubusercontent.com/lawrencesystems/graylog/master/nxlog.conf and change the IP address to match your Graylog server.
