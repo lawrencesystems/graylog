@@ -35,6 +35,7 @@ services:
       - "action.auto_create_index=false"
       - "plugins.security.ssl.http.enabled=false"
       - "plugins.security.disabled=true"
+      - "OPENSEARCH_INITIAL_ADMIN_PASSWORD=SetPassw0rdL3ttersAndNumb3r5"
     volumes:
       - "log_data:/usr/share/opensearch/data"
     ulimits:
