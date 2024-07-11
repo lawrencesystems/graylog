@@ -75,8 +75,8 @@ services:
       GRAYLOG_TRANSPORT_EMAIL_AUTH_PASSWORD: "xxxxx"
       GRAYLOG_TRANSPORT_EMAIL_USE_TLS: "true"
       GRAYLOG_TRANSPORT_EMAIL_USE_SSL: "false"
-      GRAYLOG_TRANSPORT_FROM_EMAIL: "graylog@example.com"
-      GRAYLOG_TRANSPORT_SUBJECT_PREFIX: "[graylog]"
+      GRAYLOG_TRANSPORT_EMAIL_FROM_EMAIL: "graylog@example.com"
+      GRAYLOG_TRANSPORT_EMAIL_SUBJECT_PREFIX: "[graylog]"
 
     entrypoint: /usr/bin/tini -- wait-for-it opensearch:9200 -- /docker-entrypoint.sh
     volumes:
