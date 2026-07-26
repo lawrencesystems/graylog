@@ -16,7 +16,7 @@ volumes:
 services:
   # Graylog stores configuration in MongoDB
   mongo:
-    image: mongo:6.0.5-jammy
+    image: mongo:7.0
     container_name: mongodb
     volumes:
       - "mongo_data:/data/db"
@@ -52,7 +52,7 @@ services:
     restart: unless-stopped
 
   graylog:
-    image: graylog/graylog:6.3
+    image: graylog/graylog:7.1
     container_name: graylog
     environment:
       # CHANGE ME (must be at least 16 characters)!
