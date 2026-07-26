@@ -5,7 +5,7 @@ This is a mix of [graylog2 open-core](https://github.com/Graylog2/docker-compose
 # Usage
 
 ```
-docker compose up
+docker-compose up
 ```
 
 Access graylog [here.](http://localhost:9000)
